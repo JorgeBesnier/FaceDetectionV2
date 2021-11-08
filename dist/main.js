@@ -14,6 +14,8 @@ var db;
         fireBase.auth().onAuthStateChanged(user => {
           if (user) {
             resolve(user)
+            console.log(user.displayName)
+
           }
         })
       })
@@ -52,6 +54,12 @@ var db;
         if (user) {
           // User is signed in.
           console.log("stay");
+          console.log(getCurrentUser().displayName);
+          $('#UserInfo').append(              
+            `
+            <h5>${user.displayName}</h5>
+            `
+           )
           mainContainer.style.display = "";
         } else {
           // No user is signed in.
@@ -78,7 +86,7 @@ var db;
                `
               )
               $(`#${termometerAux.id}`).click(() => {
-                getStoreInfo(termometerAux.id)
+                getStoreInfoHist(termometerAux.id)
               })
             })
           })
@@ -98,6 +106,26 @@ var db;
                )
              })
            })
+       }
+       var getStoreInfoHist = (storeId) => {
+        $('#storeInfo').removeAttr('hidden')
+         db.collection('Termometos').where('id', '==', storeId).get().then(querySnapshot=>{
+          querySnapshot.forEach(function(doc) { 
+          const infohist = doc.data()
+          console.log("aqui", infohist)
+         })
+        //  $('#termometroTable').empty()
+        //    snapshot.forEach(doc => {
+        //        doc = doc.data()
+        //        $('#termometroTable').append(`
+        //          <tr>
+        //          <td>${new Date(doc.LastTemp.Date).toISOString()}</td>
+        //          <td>${doc.LastTemp.Temperature}</td>
+        //          </tr>
+        //          `
+        //        )
+        //      })
+            })
        }
     }
     init();

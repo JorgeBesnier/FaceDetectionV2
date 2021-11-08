@@ -1,400 +1,63 @@
-[debug] [2021-11-01T20:21:05.477Z] ----------------------------------------------------------------------
-[debug] [2021-11-01T20:21:05.479Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\jorge\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
-[debug] [2021-11-01T20:21:05.480Z] CLI Version:   9.21.0
-[debug] [2021-11-01T20:21:05.480Z] Platform:      win32
-[debug] [2021-11-01T20:21:05.480Z] Node Version:  v16.6.1
-[debug] [2021-11-01T20:21:05.481Z] Time:          Mon Nov 01 2021 14:21:05 GMT-0600 (Central Standard Time)
-[debug] [2021-11-01T20:21:05.481Z] ----------------------------------------------------------------------
+[debug] [2021-11-08T18:16:20.763Z] ----------------------------------------------------------------------
+[debug] [2021-11-08T18:16:20.765Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\jorge\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2021-11-08T18:16:20.765Z] CLI Version:   9.22.0
+[debug] [2021-11-08T18:16:20.765Z] Platform:      win32
+[debug] [2021-11-08T18:16:20.765Z] Node Version:  v16.6.1
+[debug] [2021-11-08T18:16:20.766Z] Time:          Mon Nov 08 2021 12:16:20 GMT-0600 (Central Standard Time)
+[debug] [2021-11-08T18:16:20.766Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2021-11-01T20:21:05.487Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2021-11-01T20:21:05.488Z] > authorizing via signed-in user (a01039882@itesm.mx)
-[info] 
-     ######## #### ########  ######## ########     ###     ######  ########
-     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
-     ######    ##  ########  ######   ########  #########  ######  ######
-     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
-     ##       #### ##     ## ######## ########  ##     ##  ######  ########
-
-You're about to initialize a Firebase project in this directory:
-
-  C:\Repos\FaceDetectionV2
-
-Before we get started, keep in mind:
-
-  * You are currently outside your home directory
-
-[info] 
-=== Project Setup
-[info] 
-[info] First, let's associate this project directory with a Firebase project.
-[info] You can create multiple project aliases by running firebase use --add, 
-[info] but for now we'll just set up a default project.
-[info] 
-[debug] [2021-11-01T20:21:15.446Z] > refreshing access token with scopes: []
-[debug] [2021-11-01T20:21:15.447Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+[debug] [2021-11-08T18:16:20.830Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-11-08T18:16:20.830Z] > authorizing via signed-in user (a01039882@itesm.mx)
+[debug] [2021-11-08T18:16:20.830Z] [iam] checking project test-prtec for permissions ["firebase.projects.get"]
+[debug] [2021-11-08T18:16:20.832Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-11-08T18:16:20.833Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
  <request body omitted>
-[debug] [2021-11-01T20:21:15.784Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Mon, 01 Nov 2021 20:21:15 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[debug] [2021-11-01T20:21:15.821Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
-[debug] [2021-11-01T20:21:16.364Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
-[debug] [2021-11-01T20:21:16.365Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
-[info] i  Using project test-prtec (Test) 
-[info] 
-=== Database Setup
-[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
-[debug] [2021-11-01T20:21:17.185Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2021-11-01T20:21:17.185Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
- <request body omitted>
-[debug] [2021-11-01T20:21:17.487Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Mon, 01 Nov 2021 20:21:17 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[debug] [2021-11-01T20:21:17.513Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/test-prtec/services/firebasedatabase.googleapis.com  
- 
-[debug] [2021-11-01T20:21:18.025Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 01 Nov 2021 20:21:17 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[info] +  database: required API firebasedatabase.googleapis.com is enabled 
-[info] 
-[debug] [2021-11-01T20:21:18.030Z] >>> HTTP REQUEST GET https://firebasedatabase.googleapis.com/v1beta/projects/test-prtec/locations/-/instances/test-prtec-default-rtdb  
- 
-[debug] [2021-11-01T20:21:18.460Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 01 Nov 2021 20:21:18 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[info] 
-[info] Firebase Realtime Database Security Rules allow you to define how your data should be
-[info] structured and when your data can be read from and written to.
-[info] 
-[info] Skipping overwrite of Realtime Database Security Rules.
-[info] The security rules defined in database.rules.json will be published when you run firebase deploy.
-[info] 
-=== Firestore Setup
-[debug] [2021-11-01T20:21:23.788Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/test-prtec/services/firestore.googleapis.com  
- 
-[debug] [2021-11-01T20:21:24.358Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 01 Nov 2021 20:21:24 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[debug] [2021-11-01T20:21:24.362Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/test-prtec  
- 
-[debug] [2021-11-01T20:21:24.863Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 01 Nov 2021 20:21:24 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[debug] [2021-11-01T20:21:24.865Z] database_type: CLOUD_FIRESTORE
-[debug] [2021-11-01T20:21:24.866Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2021-11-01T20:21:24.867Z] > authorizing via signed-in user (a01039882@itesm.mx)
-[debug] [2021-11-01T20:21:24.867Z] [iam] checking project test-prtec for permissions ["firebase.projects.get"]
-[debug] [2021-11-01T20:21:24.868Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/test-prtec:testIamPermissions  
+[debug] [2021-11-08T18:16:21.147Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Mon, 08 Nov 2021 18:16:21 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-08T18:16:21.171Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/test-prtec:testIamPermissions  
  {"permissions":["firebase.projects.get"]}
-[debug] [2021-11-01T20:21:25.312Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 01 Nov 2021 20:21:25 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=225","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[info] 
-[info] Firestore Security Rules allow you to define how and when to allow
-[info] requests. You can keep these rules in your project directory
-[info] and publish them with firebase deploy.
-[info] 
-[info] 
-[info] Firestore indexes allow you to perform complex queries while
-[info] maintaining performance that scales with the size of the result
-[info] set. You can keep index definitions in your project directory
-[info] and publish them with firebase deploy.
-[info] 
-[info] 
-=== Functions Setup
-[info] 
-[info] A functions directory will be created in your project with sample code
-[info] pre-configured. Functions can be deployed with firebase deploy.
-[info] 
-[debug] [2021-11-01T20:21:28.712Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2021-11-01T20:21:28.712Z] > authorizing via signed-in user (a01039882@itesm.mx)
-[debug] [2021-11-01T20:21:28.713Z] [iam] checking project test-prtec for permissions ["firebase.projects.get"]
-[debug] [2021-11-01T20:21:28.714Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/test-prtec:testIamPermissions  
- {"permissions":["firebase.projects.get"]}
-[debug] [2021-11-01T20:21:29.137Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 01 Nov 2021 20:21:28 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=204","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[debug] [2021-11-01T20:21:29.139Z] >>> HTTP REQUEST POST https://serviceusage.googleapis.com/v1/projects/test-prtec/services/cloudfunctions.googleapis.com:enable  
- 
-[debug] [2021-11-01T20:21:29.141Z] >>> HTTP REQUEST POST https://serviceusage.googleapis.com/v1/projects/test-prtec/services/runtimeconfig.googleapis.com:enable  
- 
-[debug] [2021-11-01T20:21:29.674Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 01 Nov 2021 20:21:29 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[debug] [2021-11-01T20:21:29.680Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 01 Nov 2021 20:21:29 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[info] i  Skipping write of functions/package.json 
-[info] i  Skipping write of functions/index.js 
-[info] i  Skipping write of functions/.gitignore 
-[info] 
-=== Hosting Setup
-[info] 
-[info] Your public directory is the folder (relative to your project directory) that
-[info] will contain Hosting assets to be uploaded with firebase deploy. If you
-[info] have a build process for your assets, use your build's output directory.
-[info] 
-[info] i  Skipping write of public/404.html 
-[debug] [2021-11-01T20:21:55.533Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
-[debug] [2021-11-01T20:21:55.743Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
-[debug] [2021-11-01T20:21:55.743Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.2.0","browserURL":"https://www.gstatic.com/firebasejs/9.2.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.2.0/firebase.tgz"},"live":{"version":"9.2","browserURL":"https://www.gstatic.com/firebasejs/live/9.2/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.2/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.2.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.2.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.2.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.2.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.2.0/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.2.0/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.2.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.2.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.2.0/firebase-firestore/lite.js","storage":"https://www.gstatic.com/firebasejs/9.2.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.2.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.2.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.2.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.2.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.2.0/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.2.0/firebase-firestore.memory.js"}}
-[info] i  Skipping write of public/index.html 
-[info] 
-[info] i  Didn't detect a .git folder. Assuming C:\Repos\FaceDetectionV2 is the project root. 
-[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
-[info] 
-[info] Visit this URL on this device to log in:
-[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=984735045&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
-[info] 
-[info] Waiting for authentication...
-[debug] [2021-11-01T20:21:58.689Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
- {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"8d54422f6b5a7fae3305","redirect_uri":"http://localhost:9005","state":"984735045"}
-[debug] [2021-11-01T20:21:58.943Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Mon, 01 Nov 2021 20:21:58 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","vary":"X-PJAX, X-PJAX-Container, Accept-Encoding, Accept, X-Requested-With","permissions-policy":"interest-cohort=()","etag":"W/\"ea3c18f8035d7b41245dbb885974124f\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"0","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; child-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com objects-origin.githubusercontent.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events translator.github.com wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src render.githubusercontent.com viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com secured-user-images.githubusercontent.com/ *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com/; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/","x-github-request-id":"F72F:10E1:DCE64:4E5C72:61804C66"}
-[debug] [2021-11-01T20:21:58.956Z] >>> [apiv2][query] GET https://api.github.com/user [none]
-[debug] [2021-11-01T20:21:59.234Z] <<< [apiv2][status] GET https://api.github.com/user 200
-[debug] [2021-11-01T20:21:59.234Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"JorgeBesnier","id":68140217,"node_id":"MDQ6VXNlcjY4MTQwMjE3","avatar_url":"https://avatars.githubusercontent.com/u/68140217?v=4","gravatar_id":"","url":"https://api.github.com/users/JorgeBesnier","html_url":"https://github.com/JorgeBesnier","followers_url":"https://api.github.com/users/JorgeBesnier/followers","following_url":"https://api.github.com/users/JorgeBesnier/following{/other_user}","gists_url":"https://api.github.com/users/JorgeBesnier/gists{/gist_id}","starred_url":"https://api.github.com/users/JorgeBesnier/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/JorgeBesnier/subscriptions","organizations_url":"https://api.github.com/users/JorgeBesnier/orgs","repos_url":"https://api.github.com/users/JorgeBesnier/repos","events_url":"https://api.github.com/users/JorgeBesnier/events{/privacy}","received_events_url":"https://api.github.com/users/JorgeBesnier/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":5,"public_gists":0,"followers":0,"following":0,"created_at":"2020-07-11T05:37:42Z","updated_at":"2021-11-01T20:14:08Z","private_gists":0,"total_private_repos":1,"owned_private_repos":1,"disk_usage":36646,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
-[info] 
-[info] +  Success! Logged into GitHub as JorgeBesnier 
-[info] 
-[debug] [2021-11-01T20:22:06.646Z] >>> [apiv2][query] GET https://api.github.com/repos/JorgeBesnier/FaceDetectionV2/actions/secrets/public-key type=owner
-[debug] [2021-11-01T20:22:06.901Z] <<< [apiv2][status] GET https://api.github.com/repos/JorgeBesnier/FaceDetectionV2/actions/secrets/public-key 200
-[debug] [2021-11-01T20:22:06.902Z] <<< [apiv2][body] GET https://api.github.com/repos/JorgeBesnier/FaceDetectionV2/actions/secrets/public-key {"key_id":"568250167242549743","key":"byVqKtaOb5+3ayCDYXpVwKsDM4t3PPAxBifSoR+V0l4="}
-[debug] [2021-11-01T20:22:06.908Z] >>> [apiv2][query] GET https://api.github.com/repos/JorgeBesnier/FaceDetectionV2 [none]
-[debug] [2021-11-01T20:22:07.166Z] <<< [apiv2][status] GET https://api.github.com/repos/JorgeBesnier/FaceDetectionV2 200
-[debug] [2021-11-01T20:22:07.166Z] <<< [apiv2][body] GET https://api.github.com/repos/JorgeBesnier/FaceDetectionV2 {"id":423603432,"node_id":"R_kgDOGT-s6A","name":"FaceDetectionV2","full_name":"JorgeBesnier/FaceDetectionV2","private":false,"owner":{"login":"JorgeBesnier","id":68140217,"node_id":"MDQ6VXNlcjY4MTQwMjE3","avatar_url":"https://avatars.githubusercontent.com/u/68140217?v=4","gravatar_id":"","url":"https://api.github.com/users/JorgeBesnier","html_url":"https://github.com/JorgeBesnier","followers_url":"https://api.github.com/users/JorgeBesnier/followers","following_url":"https://api.github.com/users/JorgeBesnier/following{/other_user}","gists_url":"https://api.github.com/users/JorgeBesnier/gists{/gist_id}","starred_url":"https://api.github.com/users/JorgeBesnier/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/JorgeBesnier/subscriptions","organizations_url":"https://api.github.com/users/JorgeBesnier/orgs","repos_url":"https://api.github.com/users/JorgeBesnier/repos","events_url":"https://api.github.com/users/JorgeBesnier/events{/privacy}","received_events_url":"https://api.github.com/users/JorgeBesnier/received_events","type":"User","site_admin":false},"html_url":"https://github.com/JorgeBesnier/FaceDetectionV2","description":null,"fork":false,"url":"https://api.github.com/repos/JorgeBesnier/FaceDetectionV2","forks_url":"https://api.github.com/repos/JorgeBesnier/FaceDetectionV2/forks","keys_url":"https://api.github.com/repos/JorgeBesnier/FaceDetectionV2/keys{/key_id}","collaborators_url":"https://api.github.com/repos/JorgeBesnier/FaceDetectionV2/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/JorgeBesnier/FaceDetectionV2/teams","hooks_url":"https://api.github.com/repos/JorgeBesnier/FaceDetectionV2/hooks","issue_events_url":"https://api.github.com/repos/JorgeBesnier/FaceDetectionV2/issues/events{/number}","events_url":"https://api.github.com/repos/JorgeBesnier/FaceDetectionV2/events","assignees_url":"https://api.github.com/repos/JorgeBesnier/FaceDetectionV2/assignees{/user}","branches_url":"https://api.github.com/repos/JorgeBesnier/FaceDetectionV2/branches{/branch}","tags_url":"https://api.github.com/repos/JorgeBesnier/FaceDetectionV2/tags","blobs_url":"https://api.github.com/repos/JorgeBesnier/FaceDetectionV2/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/JorgeBesnier/FaceDetectionV2/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/JorgeBesnier/FaceDetectionV2/git/refs{/sha}","trees_url":"https://api.github.com/repos/JorgeBesnier/FaceDetectionV2/git/trees{/sha}","statuses_url":"https://api.github.com/repos/JorgeBesnier/FaceDetectionV2/statuses/{sha}","languages_url":"https://api.github.com/repos/JorgeBesnier/FaceDetectionV2/languages","stargazers_url":"https://api.github.com/repos/JorgeBesnier/FaceDetectionV2/stargazers","contributors_url":"https://api.github.com/repos/JorgeBesnier/FaceDetectionV2/contributors","subscribers_url":"https://api.github.com/repos/JorgeBesnier/FaceDetectionV2/subscribers","subscription_url":"https://api.github.com/repos/JorgeBesnier/FaceDetectionV2/subscription","commits_url":"https://api.github.com/repos/JorgeBesnier/FaceDetectionV2/commits{/sha}","git_commits_url":"https://api.github.com/repos/JorgeBesnier/FaceDetectionV2/git/commits{/sha}","comments_url":"https://api.github.com/repos/JorgeBesnier/FaceDetectionV2/comments{/number}","issue_comment_url":"https://api.github.com/repos/JorgeBesnier/FaceDetectionV2/issues/comments{/number}","contents_url":"https://api.github.com/repos/JorgeBesnier/FaceDetectionV2/contents/{+path}","compare_url":"https://api.github.com/repos/JorgeBesnier/FaceDetectionV2/compare/{base}...{head}","merges_url":"https://api.github.com/repos/JorgeBesnier/FaceDetectionV2/merges","archive_url":"https://api.github.com/repos/JorgeBesnier/FaceDetectionV2/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/JorgeBesnier/FaceDetectionV2/downloads","issues_url":"https://api.github.com/repos/JorgeBesnier/FaceDetectionV2/issues{/number}","pulls_url":"https://api.github.com/repos/JorgeBesnier/FaceDetectionV2/pulls{/number}","milestones_url":"https://api.github.com/repos/JorgeBesnier/FaceDetectionV2/milestones{/number}","notifications_url":"https://api.github.com/repos/JorgeBesnier/FaceDetectionV2/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/JorgeBesnier/FaceDetectionV2/labels{/name}","releases_url":"https://api.github.com/repos/JorgeBesnier/FaceDetectionV2/releases{/id}","deployments_url":"https://api.github.com/repos/JorgeBesnier/FaceDetectionV2/deployments","created_at":"2021-11-01T20:14:57Z","updated_at":"2021-11-01T20:14:57Z","pushed_at":"2021-11-01T20:14:58Z","git_url":"git://github.com/JorgeBesnier/FaceDetectionV2.git","ssh_url":"git@github.com:JorgeBesnier/FaceDetectionV2.git","clone_url":"https://github.com/JorgeBesnier/FaceDetectionV2.git","svn_url":"https://github.com/JorgeBesnier/FaceDetectionV2","homepage":null,"size":0,"stargazers_count":0,"watchers_count":0,"language":null,"has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"forks_count":0,"mirror_url":null,"archived":false,"disabled":false,"open_issues_count":0,"license":null,"allow_forking":true,"is_template":false,"topics":[],"visibility":"public","forks":0,"open_issues":0,"watchers":0,"default_branch":"main","permissions":{"admin":true,"maintain":true,"push":true,"triage":true,"pull":true},"temp_clone_token":"","allow_squash_merge":true,"allow_merge_commit":true,"allow_rebase_merge":true,"allow_auto_merge":false,"delete_branch_on_merge":false,"network_count":0,"subscribers_count":1}
-[debug] [2021-11-01T20:22:07.174Z] >>> HTTP REQUEST POST https://iam.googleapis.com/v1/projects/test-prtec/serviceAccounts  
- {"accountId":"github-action-423603432","serviceAccount":{"displayName":"GitHub Actions (JorgeBesnier/FaceDetectionV2)","description":"A service account with permission to deploy to Firebase Hosting for the GitHub repository JorgeBesnier/FaceDetectionV2"}}
-[debug] [2021-11-01T20:22:07.850Z] <<< HTTP RESPONSE 409 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Mon, 01 Nov 2021 20:22:07 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[debug] [2021-11-01T20:22:07.851Z] <<< HTTP RESPONSE BODY {"error":{"code":409,"message":"Service account github-action-423603432 already exists within project projects/test-prtec.","status":"ALREADY_EXISTS","details":[{"@type":"type.googleapis.com/google.rpc.ResourceInfo","resourceName":"projects/test-prtec/serviceAccounts/github-action-423603432@test-prtec.iam.gserviceaccount.com"}]}}
-[debug] [2021-11-01T20:22:07.857Z] >>> HTTP REQUEST GET https://iam.googleapis.com/v1/projects/test-prtec/serviceAccounts/github-action-423603432@test-prtec.iam.gserviceaccount.com  
- 
-[debug] [2021-11-01T20:22:07.858Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/test-prtec:getIamPolicy  
- 
-[debug] [2021-11-01T20:22:08.312Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 01 Nov 2021 20:22:08 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[debug] [2021-11-01T20:22:08.488Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 01 Nov 2021 20:22:08 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=330","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[debug] [2021-11-01T20:22:08.491Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/test-prtec:setIamPolicy  
- {"policy":{"version":1,"etag":"BwXPv+QB9b4=","bindings":[{"role":"roles/cloudfunctions.admin","members":["serviceAccount:firebase-adminsdk-qdja3@test-prtec.iam.gserviceaccount.com"]},{"role":"roles/editor","members":["serviceAccount:test-prtec@appspot.gserviceaccount.com"]},{"role":"roles/firebase.managementServiceAgent","members":["serviceAccount:firebase-service-account@firebase-sa-management.iam.gserviceaccount.com"]},{"role":"roles/firebase.sdkAdminServiceAgent","members":["serviceAccount:firebase-adminsdk-qdja3@test-prtec.iam.gserviceaccount.com"]},{"role":"roles/firebaseauth.admin","members":["serviceAccount:firebase-adminsdk-qdja3@test-prtec.iam.gserviceaccount.com","serviceAccount:github-action-423603432@test-prtec.iam.gserviceaccount.com"]},{"role":"roles/firebasedatabase.admin","members":["serviceAccount:firebase-adminsdk-qdja3@test-prtec.iam.gserviceaccount.com"]},{"role":"roles/firebasehosting.admin","members":["serviceAccount:github-action-423603432@test-prtec.iam.gserviceaccount.com"]},{"role":"roles/firebaserules.system","members":["serviceAccount:service-539343904593@firebase-rules.iam.gserviceaccount.com"]},{"role":"roles/firestore.serviceAgent","members":["serviceAccount:service-539343904593@gcp-sa-firestore.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountTokenCreator","members":["serviceAccount:firebase-adminsdk-qdja3@test-prtec.iam.gserviceaccount.com"]},{"role":"roles/owner","members":["user:a01039882@itesm.mx"]},{"role":"roles/pubsub.serviceAgent","members":["serviceAccount:service-539343904593@gcp-sa-pubsub.iam.gserviceaccount.com"]},{"role":"roles/run.viewer","members":["serviceAccount:github-action-423603432@test-prtec.iam.gserviceaccount.com"]},{"role":"roles/serviceusage.apiKeysViewer","members":["serviceAccount:github-action-423603432@test-prtec.iam.gserviceaccount.com"]},{"role":"roles/storage.admin","members":["serviceAccount:firebase-adminsdk-qdja3@test-prtec.iam.gserviceaccount.com"]}]},"updateMask":"bindings"}
-[debug] [2021-11-01T20:22:09.065Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 01 Nov 2021 20:22:08 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=344","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[debug] [2021-11-01T20:22:09.067Z] >>> HTTP REQUEST POST https://iam.googleapis.com/v1/projects/test-prtec/serviceAccounts/github-action-423603432@test-prtec.iam.gserviceaccount.com/keys  
- {"keyAlgorithm":"KEY_ALG_UNSPECIFIED","privateKeyType":"TYPE_GOOGLE_CREDENTIALS_FILE"}
-[debug] [2021-11-01T20:22:09.725Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 01 Nov 2021 20:22:09 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[info] 
-[info] +  Created service account github-action-423603432 with Firebase Hosting admin permissions. 
-[debug] [2021-11-01T20:22:09.826Z] >>> [apiv2][query] PUT https://api.github.com/repos/JorgeBesnier/FaceDetectionV2/actions/secrets/FIREBASE_SERVICE_ACCOUNT_TEST_PRTEC [none]
-[debug] [2021-11-01T20:22:09.826Z] >>> [apiv2][body] PUT https://api.github.com/repos/JorgeBesnier/FaceDetectionV2/actions/secrets/FIREBASE_SERVICE_ACCOUNT_TEST_PRTEC {"encrypted_value":"x9ZEzLfwGU20QsRwxniB/91CKbilF2JW0XrKtOjc30jcFbJroHpshSjmRMvS16rYeFZdL8Cxx1PlwXHAFaw2IuMeV68qjh2/oG07YDKTqjQ6oej5IQliEHVxlIeDIAPbU4px6k528NJvpwWTCVqcSKPhiVraYzS9VGfv6LDVIvxamnGKcHpLS/LuShs9eYliIfcL5itD80fcTZN93Ve1xRQaT0AGHxZHsypUAQ7WoJ5W0AmR62tmonpWHlSLE/q+3uLorzYt5MNr0R0ia7fLw2Oscl6jLNAxSf4e9Xd7va0rrPwL2T3+vvSKFk2RW5UgFnwktS4poGHJqiBO7skBnJqSFx6Y5CXn5O2syN/w1QfhVz6gyuZKceLJ/06bvMxXuEBlU+X0kBSYznmJEKv8Yn4ceOq1YxS1F62qm5iQVQffepBo9ZHtsLDQE/YUIyL+68tcSwqtmjlKpJP46G27nJtgZLmFRV+5/9VbgV61d79A8rHBt23zqhaOF6J3Tq038R+cuoA+1aZmMcj29fAq8WtuXg+FZ2SDqAKl61mFSYYVm2KN6p7LzFurdneOvyeR5O4L9oEGclSEqh3m5tCfBUVQEXkxj8mBaRrX4/BHbD2p32BENO8Kox3drrHfn212NWOCp6gBYpk9WCDrXE6TOAtRfOW3YhzWPdItnRXYUwU3pEB8YKiMvUcuNIba8A/YRyYHjYP7B1C8v8VI+b31aYi8khTsfmYtgfnbxLdX0BSc9FWS/pORJgsLWUhIgjINxqfauNYN+E2KKa+5wFPQqweTs7WWvgjx9FrSlWpNyEcCqEsH5eYgCKV76sltTYoi2nHplSC/NanrEAWqZkjy1oqehkpufhWaK4/jkxb/pUOp0GtuV1lorJWg2YQgFekJyqQBkxuWaW35QNOy6oqnkfIF7SJZvj/njI7Leo7hPl0HWm88W0M+sm40T8ULhZK6agbEh1CHYHNWCtzFr5BEwM3DxrC8cCYbduPVLe3XG3ELGxATUhDVeLLtLtPbGBZwLE0Wbhv0MUCP6IwW9k8tRtzo7p6tgWDKoO4xDlLQ51evN2JQqA38einKlVl4yKY1+c8X0CUP5OZKJAZf2oFx0yEc0eNEl+CFAs4NG55C1kf5G8d280hFMcCOkxSUcd5O4ZvfRBwOFgTYzBzsoEfdlpm/Yw1GyO5ShfWOBbAR0UhIgWVyFVdw9y5hUgO1Da5CIRqw5v82+tPYApZcFTxfE3tGGCC8qYFvnhKiDi05C1QwEOPdwBlQHrRMmPUzq8UAgRDBFiwPRBdlXRkm0wmpOtajrZ3vrwNyQYrRlcykxwvt+wddvikK9yNgEHpBGdeyUjEdj2BPJf60KCKPBdNckOVySPBPiwAljBcooTLyZXy937bfFNrFjwxoYWxLXRtDrE8OIE0G/xYsMCkY39KPSZ7gMol/81pHpscJhDQAVNz2wbGhVwALvvlrisWwTh+g8e+YzzsD7q3HfxItOrCIdgxjDQNHqvB4Q+DsMQwm/1AQ8+LcblNhG8k9EnA8P9GezFPgMZbp9RH0mol+FqAgpjzX9KHI2frdEKGGpz2kRYsH2rg0HtPhJzkogyJCjblCAMsAyBdY6TfYz2vcA2//bPb/yxy/+ySeuo0ldBlni2XtxUvliSaWnZeY1ix4EyEOcP8y/Z/xibRyBAghYhEjJsfKoBLSFTVm/5hqSwZzBE9CzksDYGUamMuJ2/osbA6NCL8ROY9ut9jGvhqCJ2ip6Bnk0O4JgqQDYilF8UiIEl7MLc8U5W7INIFmZ+EYac74JMjvMR0PqNhlfl72MP0+w+xYTVqUQ66nv6mHsoqa5wEavFK0FQQuJ0BHjDmOCJl6eVD/8762/WGgt32qrxDPdNEzM+eXBxDZAD9UFJkQJHQisUs4QDyWXqEq+9xKybF5mlu4blAcE0rg0iJtxb9cfhMgfULPkDTTyKDQCpgncbFW3GHPZKi+EdArX5ieeQZwtf2UX19v2OWdc+ThEwxPgLWLbiCN6d0F7pMw0kLeM8d0Cn7xahuGq7XTPmECeksMAxDMTzXIUqbZGoycgo2AX2hY0TqnxlXEYton4BxbdCFc19mwtp7GkInhtlKm/l9TV5cfkRKHYsD2+z5TQpmb9NfxbdxlW0/bFnvqVf1hN12txR75mr/tqKTU90AyGKRkbptltF0ex/pghxQLWQd47NjNege8gXnWLML+hpDhFbGHNG0WyaNwSxJkMw+PoQ1PDV4VGKi7MX5jpdtnLVOzXYc6yBFpDGss2Rl2SHbBlQfnkUopdEvw5vTtUuC3dDeS0aQ+3wtcswigRZRqYxW13pACWfF8ZtrhlDvsIaVq9YHfBDhxnMgWCpHcMFrcWdM3haCw47ztgvXSmwnwIY6aWWtqX9JJZMmcnSNlI593i9hx3UXNFrvKbZq70cTZOnHLy4eWwBiUmgPSgcow/KtCaqIGcbvC9QO/mpaVCVEWRapvb9LwRSJ8sDMJiSrjAYbTDhFKTBhs5h3DoV1y6CNIndsAXo3CpSSrZqD3gIv1UBtIqOQtVjRbRFBE2JkV3rf67PbZME8pcCQRHxw6Veg7FjYQ4Zf76aaqlha/WAjmPs5iffS7ejqKpB8x1Tz+jZcroizxGtuuhWlAwX6PRH+e5bzAYRmTazRKJJse79Xxqiq33PCAzqPYgxcGtNUWrWlXwrwLjXaeJ6NWhHJbiYvDuhVsl+S/IrV1KymVHm/074J7UV+nyRyn3wyeGs8J+FlTHdC7+RDhrMSirnAt1bK28henIUlaY7mTBpbfjiu4f/Llau3QD5IZZbijwtt5zK8KhClORAft7wL/AdfN6nkDnTKOCcjknemFYV+7nMIXj3Jn6gWS8g4L+Z7PoFG5owFeTx/YdQUjignBhvsTnt30exvP+gijraf+5sanSbEY1QFN5YJm2AQKsZ9X7zK/Bm4r+AddemxO2ENcKvSIOzI/ywG/7Jwa4TwtrMs6J8Xt8jIixQO337hKQby3vRqw6ekPEkVmFmUhmt23CQYjCpcyCRYCrtxUXIdatjMvLA6FlnhQWzek0XDhq5kNU9Ev2MqPEaE+3uFfMXWn+CuVMu1TYzK4XwSAmyMtA6QvzKOTZs42t7o9j2Bo2pR+CFm6M8YGDN/KV9T3dWGqky/aSMIl/ux3RbFVIFAnhrT+","key_id":"568250167242549743"}
-[debug] [2021-11-01T20:22:10.186Z] <<< [apiv2][status] PUT https://api.github.com/repos/JorgeBesnier/FaceDetectionV2/actions/secrets/FIREBASE_SERVICE_ACCOUNT_TEST_PRTEC 204
-[debug] [2021-11-01T20:22:10.186Z] <<< [apiv2][body] PUT https://api.github.com/repos/JorgeBesnier/FaceDetectionV2/actions/secrets/FIREBASE_SERVICE_ACCOUNT_TEST_PRTEC undefined
-[info] +  Uploaded service account JSON to GitHub as secret FIREBASE_SERVICE_ACCOUNT_TEST_PRTEC. 
-[info] i  You can manage your secrets at https://github.com/JorgeBesnier/FaceDetectionV2/settings/secrets. 
-[info] 
-[debug] [2021-11-01T20:22:16.128Z] ----------------------------------------------------------------------
-[debug] [2021-11-01T20:22:16.130Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\jorge\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
-[debug] [2021-11-01T20:22:16.131Z] CLI Version:   9.21.0
-[debug] [2021-11-01T20:22:16.131Z] Platform:      win32
-[debug] [2021-11-01T20:22:16.131Z] Node Version:  v16.6.1
-[debug] [2021-11-01T20:22:16.132Z] Time:          Mon Nov 01 2021 14:22:16 GMT-0600 (Central Standard Time)
-[debug] [2021-11-01T20:22:16.132Z] ----------------------------------------------------------------------
-[debug] 
-[debug] [2021-11-01T20:22:16.138Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2021-11-01T20:22:16.139Z] > authorizing via signed-in user (a01039882@itesm.mx)
-[info] 
-     ######## #### ########  ######## ########     ###     ######  ########
-     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
-     ######    ##  ########  ######   ########  #########  ######  ######
-     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
-     ##       #### ##     ## ######## ########  ##     ##  ######  ########
-
-You're about to initialize a Firebase project in this directory:
-
-  C:\Repos\FaceDetectionV2
-
-Before we get started, keep in mind:
-
-  * You are currently outside your home directory
-
-[info] 
-=== Project Setup
-[info] 
-[info] First, let's associate this project directory with a Firebase project.
-[info] You can create multiple project aliases by running firebase use --add, 
-[info] but for now we'll just set up a default project.
-[info] 
-[debug] [2021-11-01T20:22:21.271Z] > refreshing access token with scopes: []
-[debug] [2021-11-01T20:22:21.272Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+[debug] [2021-11-08T18:16:21.523Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 08 Nov 2021 18:16:21 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=54","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-08T18:16:21.525Z] > refreshing access token with scopes: []
+[debug] [2021-11-08T18:16:21.525Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
  <request body omitted>
-[debug] [2021-11-01T20:22:21.606Z] <<< HTTP RESPONSE 200 {"date":"Mon, 01 Nov 2021 20:22:21 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[debug] [2021-11-01T20:22:21.646Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
-[debug] [2021-11-01T20:22:22.113Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
-[debug] [2021-11-01T20:22:22.113Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
-[info] i  Using project test-prtec (Test) 
+[debug] [2021-11-08T18:16:21.804Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","date":"Mon, 08 Nov 2021 18:16:21 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-08T18:16:21.816Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/test-prtec [none]
+[debug] [2021-11-08T18:16:22.160Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/test-prtec 200
+[debug] [2021-11-08T18:16:22.161Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/test-prtec {"projectId":"test-prtec","projectNumber":"539343904593","displayName":"Test","name":"projects/test-prtec","resources":{"hostingSite":"test-prtec","realtimeDatabaseInstance":"test-prtec-default-rtdb","storageBucket":"test-prtec.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
 [info] 
-=== Database Setup
-[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
-[debug] [2021-11-01T20:22:23.151Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2021-11-01T20:22:23.151Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
- <request body omitted>
-[debug] [2021-11-01T20:22:23.450Z] <<< HTTP RESPONSE 200 {"date":"Mon, 01 Nov 2021 20:22:23 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[debug] [2021-11-01T20:22:23.481Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/test-prtec/services/firebasedatabase.googleapis.com  
- 
-[debug] [2021-11-01T20:22:24.139Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 01 Nov 2021 20:22:23 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] === Serving from 'C:\Repos\FaceDetectionV2'...
 [info] 
-[debug] [2021-11-01T20:22:24.145Z] >>> HTTP REQUEST GET https://firebasedatabase.googleapis.com/v1beta/projects/test-prtec/locations/-/instances/test-prtec-default-rtdb  
- 
-[debug] [2021-11-01T20:22:24.591Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 01 Nov 2021 20:22:24 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[info] 
-[info] Firebase Realtime Database Security Rules allow you to define how your data should be
-[info] structured and when your data can be read from and written to.
-[info] 
-[info] Skipping overwrite of Realtime Database Security Rules.
-[info] The security rules defined in database.rules.json will be published when you run firebase deploy.
-[info] 
-=== Firestore Setup
-[debug] [2021-11-01T20:22:32.520Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/test-prtec/services/firestore.googleapis.com  
- 
-[debug] [2021-11-01T20:22:33.088Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 01 Nov 2021 20:22:32 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[debug] [2021-11-01T20:22:33.090Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/test-prtec  
- 
-[debug] [2021-11-01T20:22:33.686Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 01 Nov 2021 20:22:33 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[debug] [2021-11-01T20:22:33.688Z] database_type: CLOUD_FIRESTORE
-[debug] [2021-11-01T20:22:33.689Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2021-11-01T20:22:33.690Z] > authorizing via signed-in user (a01039882@itesm.mx)
-[debug] [2021-11-01T20:22:33.690Z] [iam] checking project test-prtec for permissions ["firebase.projects.get"]
-[debug] [2021-11-01T20:22:33.691Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/test-prtec:testIamPermissions  
- {"permissions":["firebase.projects.get"]}
-[debug] [2021-11-01T20:22:34.126Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 01 Nov 2021 20:22:33 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=206","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[info] 
-[info] Firestore Security Rules allow you to define how and when to allow
-[info] requests. You can keep these rules in your project directory
-[info] and publish them with firebase deploy.
-[info] 
-[debug] [2021-11-01T20:22:36.801Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/test-prtec/releases?pageSize=10&pageToken=  
- 
-[debug] [2021-11-01T20:22:37.205Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 01 Nov 2021 20:22:37 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[debug] [2021-11-01T20:22:37.207Z] Found ruleset: projects/test-prtec/rulesets/403a6277-ead6-48b3-8d88-cab934466262
-[debug] [2021-11-01T20:22:37.208Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/test-prtec/rulesets/403a6277-ead6-48b3-8d88-cab934466262  
- 
-[debug] [2021-11-01T20:22:37.531Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 01 Nov 2021 20:22:37 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[debug] [2021-11-01T20:22:37.828Z] Error: EISDIR: illegal operation on a directory, open 'C:\Repos\FaceDetectionV2'
-    at Object.openSync (node:fs:582:3)
-    at Object.writeFileSync (node:fs:2143:35)
-    at Object.createFileSync (C:\Users\jorge\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\ensure\file.js:43:6)
-    at Config.writeProjectFile (C:\Users\jorge\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:144:12)
-    at C:\Users\jorge\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\firestore\rules.js:50:27
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async Object.doSetup [as firestore] (C:\Users\jorge\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\firestore\index.js:35:5)
-    at async init (C:\Users\jorge\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:19:9)
-[error] 
-[error] Error: An unexpected error has occurred.
-[debug] [2021-11-01T20:22:42.546Z] ----------------------------------------------------------------------
-[debug] [2021-11-01T20:22:42.548Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\jorge\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
-[debug] [2021-11-01T20:22:42.548Z] CLI Version:   9.21.0
-[debug] [2021-11-01T20:22:42.549Z] Platform:      win32
-[debug] [2021-11-01T20:22:42.549Z] Node Version:  v16.6.1
-[debug] [2021-11-01T20:22:42.550Z] Time:          Mon Nov 01 2021 14:22:42 GMT-0600 (Central Standard Time)
-[debug] [2021-11-01T20:22:42.550Z] ----------------------------------------------------------------------
-[debug] 
-[debug] [2021-11-01T20:22:42.557Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2021-11-01T20:22:42.557Z] > authorizing via signed-in user (a01039882@itesm.mx)
-[info] 
-     ######## #### ########  ######## ########     ###     ######  ########
-     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
-     ######    ##  ########  ######   ########  #########  ######  ######
-     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
-     ##       #### ##     ## ######## ########  ##     ##  ######  ########
-
-You're about to initialize a Firebase project in this directory:
-
-  C:\Repos\FaceDetectionV2
-
-Before we get started, keep in mind:
-
-  * You are currently outside your home directory
-
-[info] 
-=== Project Setup
-[info] 
-[info] First, let's associate this project directory with a Firebase project.
-[info] You can create multiple project aliases by running firebase use --add, 
-[info] but for now we'll just set up a default project.
-[info] 
-[debug] [2021-11-01T20:22:48.415Z] > refreshing access token with scopes: []
-[debug] [2021-11-01T20:22:48.416Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
- <request body omitted>
-[debug] [2021-11-01T20:22:48.761Z] <<< HTTP RESPONSE 200 {"date":"Mon, 01 Nov 2021 20:22:48 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[debug] [2021-11-01T20:22:48.792Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
-[debug] [2021-11-01T20:22:49.282Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
-[debug] [2021-11-01T20:22:49.283Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
-[info] i  Using project test-prtec (Test) 
-[info] 
-=== Database Setup
-[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
-[debug] [2021-11-01T20:22:50.376Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2021-11-01T20:22:50.377Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
- <request body omitted>
-[debug] [2021-11-01T20:22:50.665Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Mon, 01 Nov 2021 20:22:50 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[debug] [2021-11-01T20:22:50.695Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/test-prtec/services/firebasedatabase.googleapis.com  
- 
-[debug] [2021-11-01T20:22:51.217Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 01 Nov 2021 20:22:51 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[info] +  database: required API firebasedatabase.googleapis.com is enabled 
-[info] 
-[debug] [2021-11-01T20:22:51.224Z] >>> HTTP REQUEST GET https://firebasedatabase.googleapis.com/v1beta/projects/test-prtec/locations/-/instances/test-prtec-default-rtdb  
- 
-[debug] [2021-11-01T20:22:51.716Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 01 Nov 2021 20:22:51 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[info] 
-[info] Firebase Realtime Database Security Rules allow you to define how your data should be
-[info] structured and when your data can be read from and written to.
-[info] 
-[debug] [2021-11-01T20:22:55.199Z] >>> HTTP REQUEST GET https://test-prtec-default-rtdb.firebaseio.com/.settings/rules.json  
- 
-[debug] [2021-11-01T20:22:55.679Z] <<< HTTP RESPONSE 200 {"server":"nginx","date":"Mon, 01 Nov 2021 20:22:55 GMT","content-type":"application/json; charset=utf-8","content-length":"58","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}
-[info] +  Database Rules for test-prtec-default-rtdb have been written to database.rules.json. 
-[info] Future modifications to database.rules.json will update Realtime Database Security Rules when you run
-[info] firebase deploy.
-[info] 
-=== Firestore Setup
-[debug] [2021-11-01T20:22:55.696Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/test-prtec/services/firestore.googleapis.com  
- 
-[debug] [2021-11-01T20:22:56.278Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 01 Nov 2021 20:22:56 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[debug] [2021-11-01T20:22:56.281Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/test-prtec  
- 
-[debug] [2021-11-01T20:22:56.803Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 01 Nov 2021 20:22:56 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[debug] [2021-11-01T20:22:56.805Z] database_type: CLOUD_FIRESTORE
-[debug] [2021-11-01T20:22:56.807Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2021-11-01T20:22:56.810Z] > authorizing via signed-in user (a01039882@itesm.mx)
-[debug] [2021-11-01T20:22:56.810Z] [iam] checking project test-prtec for permissions ["firebase.projects.get"]
-[debug] [2021-11-01T20:22:56.812Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/test-prtec:testIamPermissions  
- {"permissions":["firebase.projects.get"]}
-[debug] [2021-11-01T20:22:57.096Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 01 Nov 2021 20:22:56 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=61","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[info] 
-[info] Firestore Security Rules allow you to define how and when to allow
-[info] requests. You can keep these rules in your project directory
-[info] and publish them with firebase deploy.
-[info] 
-[debug] [2021-11-01T20:22:59.463Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/test-prtec/releases?pageSize=10&pageToken=  
- 
-[debug] [2021-11-01T20:22:59.778Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 01 Nov 2021 20:22:59 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[debug] [2021-11-01T20:22:59.780Z] Found ruleset: projects/test-prtec/rulesets/403a6277-ead6-48b3-8d88-cab934466262
-[debug] [2021-11-01T20:22:59.781Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/test-prtec/rulesets/403a6277-ead6-48b3-8d88-cab934466262  
- 
-[debug] [2021-11-01T20:23:00.084Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 01 Nov 2021 20:22:59 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[info] 
-[info] Firestore indexes allow you to perform complex queries while
-[info] maintaining performance that scales with the size of the result
-[info] set. You can keep index definitions in your project directory
-[info] and publish them with firebase deploy.
-[info] 
-[debug] [2021-11-01T20:23:01.794Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1/projects/test-prtec/databases/(default)/collectionGroups/-/indexes  
- 
-[debug] [2021-11-01T20:23:01.795Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1/projects/test-prtec/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false  
- 
-[debug] [2021-11-01T20:23:02.321Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 01 Nov 2021 20:23:02 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[debug] [2021-11-01T20:23:02.324Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 01 Nov 2021 20:23:02 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[info] 
-=== Functions Setup
-[info] 
-[info] A functions directory will be created in your project with sample code
-[info] pre-configured. Functions can be deployed with firebase deploy.
-[info] 
-[debug] [2021-11-01T20:23:02.338Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2021-11-01T20:23:02.339Z] > authorizing via signed-in user (a01039882@itesm.mx)
-[debug] [2021-11-01T20:23:02.340Z] [iam] checking project test-prtec for permissions ["firebase.projects.get"]
-[debug] [2021-11-01T20:23:02.341Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/test-prtec:testIamPermissions  
- {"permissions":["firebase.projects.get"]}
-[debug] [2021-11-01T20:23:02.813Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 01 Nov 2021 20:23:02 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=220","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[debug] [2021-11-01T20:23:02.817Z] >>> HTTP REQUEST POST https://serviceusage.googleapis.com/v1/projects/test-prtec/services/cloudfunctions.googleapis.com:enable  
- 
-[debug] [2021-11-01T20:23:02.819Z] >>> HTTP REQUEST POST https://serviceusage.googleapis.com/v1/projects/test-prtec/services/runtimeconfig.googleapis.com:enable  
- 
-[debug] [2021-11-01T20:23:03.309Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 01 Nov 2021 20:23:03 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[debug] [2021-11-01T20:23:03.312Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 01 Nov 2021 20:23:03 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[info] +  Wrote functions/package.json 
-[info] +  Wrote functions/.eslintrc.js 
-[info] +  Wrote functions/index.js 
-[info] +  Wrote functions/.gitignore 
-[info] 
-=== Hosting Setup
-[info] 
-[info] Your public directory is the folder (relative to your project directory) that
-[info] will contain Hosting assets to be uploaded with firebase deploy. If you
-[info] have a build process for your assets, use your build's output directory.
-[info] 
+[debug] [2021-11-08T18:16:22.168Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/test-prtec/sites 
+[warn] !  Your requested "node" version "14" doesn't match your global version "16" {"metadata":{"emulator":{"name":"functions"},"message":"Your requested \"node\" version \"14\" doesn't match your global version \"16\""}}
+[debug] [2021-11-08T18:16:22.184Z] defaultcredentials: writing to file C:\Users\jorge\AppData\Roaming\firebase\a01039882_itesm_mx_application_default_credentials.json
+[debug] [2021-11-08T18:16:22.189Z] Setting GAC to C:\Users\jorge\AppData\Roaming\firebase\a01039882_itesm_mx_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\jorge\\AppData\\Roaming\\firebase\\a01039882_itesm_mx_application_default_credentials.json"}}
+[debug] [2021-11-08T18:16:22.191Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/test-prtec/adminSdkConfig [none]
+[debug] [2021-11-08T18:16:22.531Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/test-prtec/adminSdkConfig 200
+[debug] [2021-11-08T18:16:22.531Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/test-prtec/adminSdkConfig {"projectId":"test-prtec","databaseURL":"https://test-prtec-default-rtdb.firebaseio.com","storageBucket":"test-prtec.appspot.com","locationId":"us-central"}
+[debug] [2021-11-08T18:16:22.657Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/test-prtec/sites 200
+[debug] [2021-11-08T18:16:22.658Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/test-prtec/sites {"sites":[{"name":"projects/539343904593/sites/test-prtec","defaultUrl":"https://test-prtec.web.app","appId":"1:539343904593:web:a55cb88e5bc3eda246bd70","type":"DEFAULT_SITE"}]}
+[debug] [2021-11-08T18:16:22.658Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/test-prtec/webApps/1:539343904593:web:a55cb88e5bc3eda246bd70/config [none]
+[debug] [2021-11-08T18:16:23.118Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/test-prtec/webApps/1:539343904593:web:a55cb88e5bc3eda246bd70/config 200
+[debug] [2021-11-08T18:16:23.119Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/test-prtec/webApps/1:539343904593:web:a55cb88e5bc3eda246bd70/config {"projectId":"test-prtec","appId":"1:539343904593:web:a55cb88e5bc3eda246bd70","databaseURL":"https://test-prtec-default-rtdb.firebaseio.com","storageBucket":"test-prtec.appspot.com","locationId":"us-central","apiKey":"AIzaSyCrGrao9en43NT_L3vBHt2RoHno8V8qRXY","authDomain":"test-prtec.firebaseapp.com","messagingSenderId":"539343904593","measurementId":"G-DET7FYKBER"}
+[info] i  functions: Watching "C:\Repos\FaceDetectionV2\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Repos\\FaceDetectionV2\\functions\" for Cloud Functions..."}}
+[debug] [2021-11-08T18:16:23.183Z] [worker-pool] addWorker(~diagnostic~) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(~diagnostic~)"}}
+[debug] [2021-11-08T18:16:23.184Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key ~diagnostic~, total=1"}}
+[debug] [2021-11-08T18:16:23.184Z] [worker-pool] submitWork(triggerId=) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=)"}}
+[debug] [2021-11-08T18:16:23.185Z] [worker-~diagnostic~-f614cdea-554d-4958-8b7e-f82ee8e6ddc3]: Assigning socketPath: \\?\pipe\C:\Repos\FaceDetectionV2\functions\9484 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-f614cdea-554d-4958-8b7e-f82ee8e6ddc3]: Assigning socketPath: \\\\?\\pipe\\C:\\Repos\\FaceDetectionV2\\functions\\9484"}}
+[debug] [2021-11-08T18:16:23.185Z] [worker-~diagnostic~-f614cdea-554d-4958-8b7e-f82ee8e6ddc3]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-f614cdea-554d-4958-8b7e-f82ee8e6ddc3]: BUSY"}}
+[info] i  hosting: Serving hosting files from: dist {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mdist\u001b[22m"}}
+[info] +  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[debug] [2021-11-08T18:16:23.444Z] [runtime-status] [9484] Functions runtime initialized. {"cwd":"C:\\Repos\\FaceDetectionV2\\functions","node_version":"16.6.1"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [9484] Functions runtime initialized. {\"cwd\":\"C:\\\\Repos\\\\FaceDetectionV2\\\\functions\",\"node_version\":\"16.6.1\"}"}}
+[debug] [2021-11-08T18:16:23.445Z] [runtime-status] [9484] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [9484] Disabled runtime features: undefined"}}
+[debug] [2021-11-08T18:16:23.448Z] [runtime-status] [9484] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.12.0","resolution":"C:\\Repos\\FaceDetectionV2\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [9484] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"9.12.0\",\"resolution\":\"C:\\\\Repos\\\\FaceDetectionV2\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2021-11-08T18:16:23.453Z] [runtime-status] [9484] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.16.0","resolution":"C:\\Repos\\FaceDetectionV2\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [9484] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.16.0\",\"resolution\":\"C:\\\\Repos\\\\FaceDetectionV2\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2021-11-08T18:16:23.455Z] [runtime-status] [9484] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [9484] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2021-11-08T18:16:23.457Z] [runtime-status] [9484] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.16.0","resolution":"C:\\Repos\\FaceDetectionV2\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [9484] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.16.0\",\"resolution\":\"C:\\\\Repos\\\\FaceDetectionV2\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2021-11-08T18:16:23.517Z] [runtime-status] [9484] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [9484] Checked functions.config() {\"config\":{}}"}}
+[debug] [2021-11-08T18:16:23.517Z] [runtime-status] [9484] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.16.0","resolution":"C:\\Repos\\FaceDetectionV2\\functions\\node_modules\\firebase-functions\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [9484] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.16.0\",\"resolution\":\"C:\\\\Repos\\\\FaceDetectionV2\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}}"}}
+[debug] [2021-11-08T18:16:23.518Z] [runtime-status] [9484] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.16.0","resolution":"C:\\Repos\\FaceDetectionV2\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [9484] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.16.0\",\"resolution\":\"C:\\\\Repos\\\\FaceDetectionV2\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2021-11-08T18:16:23.520Z] [runtime-status] [9484] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.12.0","resolution":"C:\\Repos\\FaceDetectionV2\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [9484] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"9.12.0\",\"resolution\":\"C:\\\\Repos\\\\FaceDetectionV2\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2021-11-08T18:16:23.521Z] [runtime-status] [9484] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.16.0","resolution":"C:\\Repos\\FaceDetectionV2\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [9484] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.16.0\",\"resolution\":\"C:\\\\Repos\\\\FaceDetectionV2\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2021-11-08T18:16:23.521Z] [runtime-status] [9484] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.12.0","resolution":"C:\\Repos\\FaceDetectionV2\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [9484] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"9.12.0\",\"resolution\":\"C:\\\\Repos\\\\FaceDetectionV2\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[info] +  functions[us-central1-helloWorld]: http function initialized (http://localhost:5001/test-prtec/us-central1/helloWorld). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5001/test-prtec/us-central1/helloWorld)."}}
+[debug] [2021-11-08T18:16:23.525Z] [worker-~diagnostic~-f614cdea-554d-4958-8b7e-f82ee8e6ddc3]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-f614cdea-554d-4958-8b7e-f82ee8e6ddc3]: IDLE"}}
+[info] i  hosting: 127.0.0.1 - - [08/Nov/2021:18:16:33 +0000] "GET /main.js HTTP/1.1" 200 4401 "http://localhost:5000/main.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [08/Nov/2021:18:16:33 +0000] \"GET /main.js HTTP/1.1\" 200 4401 \"http://localhost:5000/main.html\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36\""}}
