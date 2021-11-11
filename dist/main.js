@@ -110,9 +110,33 @@ var db;
        var getStoreInfoHist = (storeId) => {
         $('#storeInfo').removeAttr('hidden')
          db.collection('Termometos').where('id', '==', storeId).get().then(querySnapshot=>{
+          $('#termometroTable').empty()
           querySnapshot.forEach(function(doc) { 
-          const infohist = doc.data()
-          console.log("aqui", infohist)
+            
+
+            db.collection("Termometos").doc(doc.id).collection("bio").get()
+            .then(querySnapshot => {
+                querySnapshot.forEach(doc => {
+                    const aux = doc.data()
+                    console.log("aqui jorge")
+                    console.log(doc.id, " => ", aux);
+                    $('#termometroTable').append(`
+                      <tr>
+                      <td>${new Date(aux.Date).toISOString()}</td>
+                      <td>${aux.Temp}</td>
+                      </tr>
+                      `
+                    )
+                });
+            });
+
+
+
+          const documentID = doc.id
+          console.log("aqui", documentID)
+          //  const subDoc = await db.collection('Termometos').where('id', '==', storeId)
+          //  console.log(subDoc)
+          //console.log("aqui", infohist)
          })
         //  $('#termometroTable').empty()
         //    snapshot.forEach(doc => {
